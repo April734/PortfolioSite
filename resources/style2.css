@@ -3,9 +3,7 @@
 }
 
 main {
-width: 1000px;
-margin: 0 auto;
-padding-top: 100px;
+  padding-top: 100px;
 }
 
 header {
@@ -90,114 +88,66 @@ header .header-cases {
 
 }
 
-/*CASES*/
 
+/*INDEX*/
 
-
-
-
-  /*
-.container {
-  display: block;
-  height: 880px;
-
-}
-
-.container div {
+.index-banner {
   width: 100%;
-  height: 100px;
-  margin: 5px;
+  height: calc(100vh - 100px);
+  background-image: url('img/emile-perron-190221-unsplash.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: table;
 }
-*/
-.cases {
+
+.vertical-center {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.index-banner h2 {
   font-family: Catamaran;
-  font-size: 24px;
+  font-size: 60px;
   font-weight: 900;
-  color: #111;
-  text-transform: uppercase;
-  display: block;
-  margin: 0 auto;
-  text-align: left;
-  padding: 20px 0;
-}
-
-.container {
-display: block;
-width: fit-container;
-margin: 0 auto;
-margin-top: 20px;
-
-}
-
-.container div {
-
-margin: 10px auto;
-}
-
-
-.container div p {
-font-family: Catamaran;
-font-size: 28px;
-font-weight: 600;
-line-height: 100px;
-color: #111;
-text-align: center;
-text-transform: uppercase;
-}
-
-.box {
-flex: 1;
-border: 1px solid #ccc;
-background-color: #f2f2f2;
-}
-
-
-
-
-
-@media only screen and (min-width: 1000px) {
-.cases {
-  font-family: Catamaran;
-  font-size: 24px;
-  font-weight: 900;
-  color: #111;
-  text-transform: uppercase;
-  display: block;
-  margin: 0 auto;
-  text-align: left;
-  padding: 20px 0;
-}
-
-.container {
-  width: fit-container;
-  height: 500px;
-  background-color: #fff;
-
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: center;
-
-}
-
-.container div {
-width: 240px;
-height: 240px;
-margin: 5px;
-
-}
-
-.box {
-
-
-background-color: #f2f2f2;
-
-}
-
-.box p {
+    line-height: 70px;
+  color: #fff;
   text-align: center;
+  text-shadow: 2px 2px  8px #111;
+}
+
+.index-banner h1 {
+  font-family: Cormorant Garamond;
+  font-size: 28px;
+  font-weight: 100;
+  font-style: italic;
+  line-height: 60px;
+  color: #fff;
+  text-align: center;
+  text-shadow: 2px 2px  8px #111;
+}
+
+.container {
+  display: block;
+  width: fit-container;
+  margin: 0 auto;
+margin-top: 20px;
+}
+
+.container div {
+/*
+border: 1px solid #ccc;
+*/
+margin: 10px auto;
 
 
+/*
+background-color: #f2f2f2;
+*/
+
+}
+
+.container div h3 {
   font-family: Catamaran;
   font-size: 28px;
   font-weight: 600;
@@ -207,17 +157,83 @@ background-color: #f2f2f2;
   text-transform: uppercase;
 }
 
+.box {
+flex: 1;
+border: 1px solid #ccc;
+background-color: #f2f2f2;
 }
-/*FOOTER*/
 
+.box-2 {
+flex: 1;
+border: 1px solid #ccc;
+background-color: #f2f2f2;
+
+}
+/*
+.index-links div {
+  margin: 16px 16px 0;
+  width: calc(100% - 32px);
+  height: 100px;
+  background-color: #f2f2f2;
+}
+.index-links div h3 {
+  font-family: Catamaran;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 100px;
+  color: #111;
+  text-align: center;
+  text-transform: uppercase;
+}
+*/
+
+
+
+@media only screen and (min-width: 1000px) {
 .wrapper {
   width: 1000px;
   margin: 0 auto;
 }
 
+  .index-banner {
+    height: 450px;
+  }
+
+  .index-banner h1 {
+    display: block;
+    width: 560px;
+    margin: 0 auto;
+  }
+
+  .index-links {
+    overflow: hidden;
+  }
+
+  .index-links div {
+    margin: 20px 10px 0;
+
+    height: 230px;
+    background-color: #f2f2f2;
+    float: left;
+  }
+
+.index-boxlink-square {
+  width: calc(25% - 20px) !important;
+  }
+}
+
+.index-boxlink-rectangle {
+  width: calc(50% - 20px) !important;
+}
+
+.index-links div h3 {
+  line-height: 230px;
+}
+
+/*FOOTER*/
+
 footer {
-  width: fit-container;
-  margin: 0 auto;
+  width: calc(100% - 80px);
   padding: 40px 40px;
   margin-top: 20px;
   background-color: #111;
