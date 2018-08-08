@@ -274,10 +274,14 @@ footer ul {
 
 footer ul li p {
   font-family: Catamaran;
-  font-size: 24px;
+  font-size: 20px;
   color: #fff;
   line-height: 40px;
   text-transform: uppercase;
+}
+
+.footer-links-cases a {
+  font-size: 20px;
 }
 
 }
