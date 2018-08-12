@@ -116,7 +116,7 @@ header nav ul li {
   display: inline-block;
   float: left;
   list-style: none;
-  padding: 0px 16px;
+  padding: 0px 6px;
 }
 
 header nav ul li a {
@@ -165,6 +165,13 @@ header .header-cases {
   margin-right: 40px;
   margin-top: 30px;
   padding: 0 20px;
+}
+
+header nav ul li {
+  display: inline-block;
+  float: left;
+  list-style: none;
+  padding: 0px 16px;
 }
 
 }

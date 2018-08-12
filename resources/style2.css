@@ -145,7 +145,7 @@ header nav ul li {
   display: inline-block;
   float: left;
   list-style: none;
-  padding: 0 16px;
+  padding: 0 6px;
 }
 
 header nav ul li a {
@@ -190,6 +190,10 @@ header .header-cases {
     margin-right: 40px;
     margin-top: 30px;
     padding: 0 20px;
+  }
+
+  header nav ul li {
+    padding: 0 16px;
   }
 }
 
@@ -247,6 +251,7 @@ header .header-cases {
   text-align: center;
   text-transform: uppercase;
 }
+
 
 @media only screen and (min-width: 1000px) {
   .wrapper {
